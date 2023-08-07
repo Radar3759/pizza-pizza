@@ -1,3 +1,29 @@
 body {
     background-color: orange;
+    background-image: url("images/peter-bravo-de-los-rios-unsplash-pizza.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-position: 50px 100px; */
+   
+}
+
+#toppings {
+    
+    background-color: white;
+    width: 80%;
+    height: 200px;
+    border-radius: 10px;
+    opacity: 60%;
+} 
+
+.button {
+    background-color: orange;
+    border-radius: 5px;
+    border: 15px;
+    width: 200px;
+    height: 50px;
+    /* fix the font and size */
+    font-size: 20px;
+    margin-top: 20px;
+    
 }
