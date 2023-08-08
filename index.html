@@ -3,17 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <title>Pizza Toppings</title>
+    <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
     <h1>Rick's Pizza Picker</h1>
-    <div id="toppings">
-        <!-- toppings will show here with innerText -->
-    </div>
-    <button onClick = 'pizza()' class="button">List Toppings!</button>
 
-    <script src="javascript.js"></script>
+    <!-- Pick ONE random topping -->
+    <h2 id="single"></h2>
+     <!-- toppings will show in this div with innerText -->
+    <div id="toppings">
+       <span>Toppings Listed Here</span>
+    </div>
+    <button onClick = 'pizza()' class="button">Pick One Topping!</button>
+
+    <!-- ALL TOPPINGS  -->
+    <form>
+        <input type="text"  name="" placeholder="Enter a number 1-10">
+    </form>
+
+    <!-- <h2 id="veggie">Click for MOAR Than One Veggie Topping</h2> -->
+    <button id="all" onClick = 'allToppings()' class="button">All Toppings!</button>
+    <!-- VEGGIE TOPPINGS -->
+     <form>
+        <input type="text"  name="" placeholder="Enter a number 1-10">
+    </form>
+
+    <!-- <h2 id="veggie">Click for MOAR Than One Veggie Topping</h2> -->
+    <button id="veggie" onClick = 'veggieToppings()' class="button">Veggie Toppings!</button>
+  <!-- MEAT TOPPINGS -->
+    <form>
+        <input type="text"  name="" placeholder="Enter a number 1-10">
+    </form>
+
+    <!-- <h2 id="veggie">Click for MOAR Than One Veggie Topping</h2> -->
+    <button id="meat" onClick = 'meatToppings()' class="button">Meat Toppings!</button>
+  
+
+    <script src="main.js"></script>
     
 </body>
 </html>
