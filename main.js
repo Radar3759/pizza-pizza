@@ -3,11 +3,11 @@ document.querySelector('#all').addEventListener('click', allToppings)
 document.querySelector('#veggie').addEventListener('click', veggieToppings)
 document.querySelector('#meat').addEventListener('click', meatToppings)
 // const num = document.querySelector('#number').value
-let allTop = ["tomato", "mushrooms", "onions", "black olives", "green olives", "red peppers", "jalapeno", "pineapple", "basil", "anchovies", "bacon", "ham", "chicken", "pepperoni", "Italian sausage", "Canadian bacon", "pulled pork", "salami", "ground beef"]
+let allTop = ["Tomato", "Mushrooms", "Onions", "Black Olives", "Green Olives", "Red Peppers", "Jalapeno", "Pineapple", "Basil", "Anchovies", "Bacon", "Ham", "Chicken", "Pepperoni", "Italian Sausage", "Canadian Bacon", "Pulled Pork", "Salami", "Ground Beef"]
 
-let veggieTop = ["tomato", "mushrooms", "onions", "black olives", "green olives", "red peppers", "jalapeno", "pineapple", "basil"]
+let veggieTop = ["Tomato", "Mushrooms", "Onions", "Black Olives", "Green Olives", "Red Peppers", "Jalapeno", "Pineapple", "Basil"]
 
-let meatTop = ["anchovies", "bacon", "ham", "chicken", "pepperoni", "Italian sausage", "Canadian bacon", "pulled pork", "salami", "ground beef"]
+let meatTop = ["Anchovies", "Bacon", "Ham", "Chicken", "Pepperoni", "Italian Sausage", "Canadian Bacon", "Pulled Pork", "Salami", "Ground Beef"]
 
 function pizza() {
     let final_toppings = Math.floor(Math.random() * (allTop.length));
@@ -29,6 +29,10 @@ function allToppings() {
     let finalTops = shuffled.slice(0, numToppings)
     
     document.getElementById('toppings').innerHTML = finalTops
+
+    let finalTopsPretty = finalTops.join(', ')
+    
+    document.getElementById('toppings').innerHTML = finalTopsPretty
 }
 
 function veggieToppings() {
@@ -41,6 +45,10 @@ function veggieToppings() {
     let finalTops = shuffled.slice(0, numToppings)
     
     document.getElementById('toppings').innerHTML = finalTops
+
+    let finalTopsPretty = finalTops.join(', ')
+    
+    document.getElementById('toppings').innerHTML = finalTopsPretty
 }
 
 function meatToppings() {
@@ -51,8 +59,10 @@ function meatToppings() {
     // clears the single topping
     document.querySelector('#toppings').innerText = ""
     let finalTops = shuffled.slice(0, numToppings)
+
+    let finalTopsPretty = finalTops.join(', ')
     
-    document.getElementById('toppings').innerHTML = finalTops
+    document.getElementById('toppings').innerHTML = finalTopsPretty
 }
 
 
