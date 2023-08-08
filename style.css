@@ -27,6 +27,7 @@ body {
     /* fix the font and size */
     font-size: 20px;
     margin-top: 20px;
+    margin-left: 10px;
     
 }
 div {
@@ -34,7 +35,7 @@ div {
 }
 
 #veggie, #meat, #all {
-    color: white;
+    color: black;
     margin-top: 5px;
 }
 
@@ -42,5 +43,14 @@ input {
     padding: 10px;
     border-radius: 5px;
     margin-top: 30px;
+    margin-left: 10px;
 
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    border: 2px solid orange;
 }
