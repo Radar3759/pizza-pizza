@@ -11,22 +11,31 @@
     <!-- <h1>Rick's Pizza Picker</h1> -->
     <img name='logo' src="images/pizzaLogo.jpg">
     <!-- Pick ONE random topping -->
-    <h2 id="single"></h2>
+    <h2 id="empty"></h2>
      <!-- toppings will show in this div with innerText -->
    <div id="toppings"> 
        <span>Click on 'Pick One Topping!" or enter a number and click the button of your choice.</span>
     </div>
-    <button onClick = 'pizza()' class="button">Pick One Topping!</button>
 
+    <div class="button-div-one">
+    <button id='single' onClick = 'pizza()' class="button">Pick One Topping!</button>
+    </div>    
+
+    
     <!-- ALL TOPPINGS  -->
+
+    <div class="button-div">
     <form>
         <input type="text"  id="allNum" placeholder="Enter a number 1-10">
     </form>
     
     <button id="all" onClick = 'allToppings()' class="button">All Toppings!
     </button> 
+    </div>
 
     <!-- VEGGIE TOPPINGS -->
+
+    <div class="button-div">
      <form>
         <input type="text"  id="vegNum" placeholder="Enter a number 1-10">
     </form>
@@ -34,8 +43,11 @@
     <button id="veggie" onClick = 'veggieToppings()' class="button">
         Veggie Toppings!
     </button>
-    
+    </div>
+
     <!-- MEAT TOPPINGS -->
+
+    <div class="button-div">
     <form>
         <input type="text"  id ="meatNum" placeholder="Enter a number 1-10">
     </form>
@@ -43,15 +55,17 @@
     <button id="meat" onClick = 'meatToppings()' class="button">
         Meat Toppings!
     </button> 
+    </div>
 
     <!-- Rick -->
-  
-    <form>
-        <input type="text"  name="" placeholder="Enter a number 1-10">
-    </form>
-   
-    <button id="rick" onClick = 'rickRoll()' class="button">Rick's Toppings!
-    </button>
+
+    <div class="button-div-one">
+        <!-- <form>
+            <input type="text"  name="" placeholder="Enter a number 1-10">
+        </form> -->
+        <button id="rick" onClick = 'rickRoll()' class="button">Rick's Toppings!
+        </button>
+    </div>
     
     <script src="main.js"></script>
     
